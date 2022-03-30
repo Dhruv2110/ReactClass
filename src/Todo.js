@@ -59,11 +59,11 @@ const Todo = () => {
             {
                 todos.map(
                     (item,index) => 
-                    <>
-                            <li key={index}>{item}</li>
+                    <div key = {index}>
+                            <li >{item}</li>
                             <button onClick={() => btnEdit(index)}>Edit</button>
                             <button onClick={() => btnDelete(index)}>delete</button>
-                    </>
+                    </div>
                     )
             }
         </ol>
