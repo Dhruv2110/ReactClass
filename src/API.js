@@ -13,7 +13,7 @@ const API = () => {
         //     .then(response => response.json())
         //     .then(data => setInfo(data));
 
-        axios.get('http://localhost:8500/getdata')
+        axios.get('http://localhost:8500/getdatau')
             .then(res => setInfo(res.data))
 
     },[])
